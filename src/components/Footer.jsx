@@ -52,7 +52,7 @@ const Footer = () => {
           <img src="/booc-pic.svg" alt="booc-logo" />
         </div>
       </div>
-      <div className="relative w-full h-64 mt-[-16rem]">
+      <div className="relative w-full h-64 mt-[-16rem] lg:mt-[-28rem]">
         <img
           src="/water-paint.svg"
           alt="ana-logo"
