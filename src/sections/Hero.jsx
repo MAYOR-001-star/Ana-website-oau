@@ -62,14 +62,14 @@ const Hero = () => {
       <div className="flex justify-around gap-7 items-center py-10">
           <div className='w-full h-full'>
             <img
-              src="/Ticket-top1.svg"
+              src="/Ticket-bottom1.svg"
               alt="hero-bg"
               className="w-48 h-26 object-cover"
             />
           </div>
           <div className='w-full h-full'>
             <img
-              src="/Ticket-top2.svg"
+              src="/Ticket-bottom2.svg"
               alt="hero-bg"
               className="w-48 h-26 object-cover"
             />
