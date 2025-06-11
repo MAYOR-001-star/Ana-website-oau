@@ -12,7 +12,6 @@ const Tickets = () => {
         </p>
         <a
             href="https://anaoau.org/book-festival"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <button className="bg-[#008300] lg:p-[0.5rem 1.5rem] text-white px-6 py-2 border-2 border-[#000000] rounded-[0.25rem] mt-4 transition duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">

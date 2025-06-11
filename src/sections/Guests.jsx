@@ -72,10 +72,12 @@ const GuestSlider = () => {
         <div className="flex justify-end items-center mt-6 gap-4">
             <button
                 ref={prevRef}
-                className="swiper-button-prev-custom p-2 border rounded-md hover:bg-gray-100 transition w-16 h-16"
+                className="swiper-button-prev-custom lg:p-[1.0625rem] border border-black rounded-[0.375rem] shadow-[8px_8px_0px_0px_#33353D] hover:shadow-[2px_2px_0px_0px_#33353D] transition lg:w-[4.5rem] lg:h-[4.5rem]"
                 aria-label="Previous"
             >
-                <img src='/left-slide.svg' alt='left-side' />
+              <div>
+                <img src='/left-arrow.svg' alt='left-side' />
+              </div>
             </button>
             <div className="flex justify-center mt-4 gap-2">
                 {guests.map((_, index) => (
@@ -91,10 +93,12 @@ const GuestSlider = () => {
             </div>
             <button
                 ref={nextRef}
-                className="swiper-button-next-custom p-2 border rounded-md hover:bg-gray-100 transition w-16 h-16"
+                className="swiper-button-next-custom p[0.625rem] lg:p-[1.0625rem] border border-black rounded-[0.375rem] shadow-[8px_8px_0px_0px_#33353D] hover:shadow-[2px_2px_0px_0px_#33353D] transition w-[2.75rem] h-[2.75rem] lg:w-[4.5rem] lg:h-[4.5rem]"
                 aria-label="Next"
             >
-                <img src='/right-slide.svg' alt='left-side' />
+              <div>
+                <img src='/right-arrow.svg' alt='left-side' />
+              </div>
             </button>
         </div>
         </div>

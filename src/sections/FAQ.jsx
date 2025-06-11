@@ -23,9 +23,9 @@ const Faq = () => {
         <div className="w-[21.5625rem] lg:w-[28.125rem] p-[0rem_1rem] flex flex-col justify-center items-stretch gap-5 lg:p-[1rem_2.5rem] bg-white border border-[#B9BBC6] shadow-[8px_8px_0_0_rgba(0,0,0,0.08)] lg:shadow-[24px_24px_0_0_rgba(0,0,0,0.08)] rounded-md">
           <div
             onClick={() => toggleFAQ("ANA-OAU")}
-            className="p-[1.5rem_0rem] flex flex-col justify-center items-start gap-[0.25rem] border-b-2 border-[#e7e8ec]"
+            className="p-[1.5rem_0rem] flex flex-col justify-center items-start gap-[0.25rem] lg:gap-[1rem] border-b-2 border-[#e7e8ec]"
           >
-            <div className="flex justify-between items-center w-full cursor-pointer">
+            <div className="flex justify-between gap-[1rem] items-center w-full cursor-pointer">
               <p
                 className={`${
                   active === "ANA-OAU"
@@ -48,7 +48,7 @@ const Faq = () => {
                 active === "ANA-OAU" ? "block h-full" : "hidden h-0"
               }`}
             >
-              ANA-OAU is an acronym for the Association of Nigerian Authors–Obafemi Awolowo University, Ile-Ife. We are a community of book-lovers, artists, and art enthusiasts on OAU Campus.
+              ANA-OAU is an acronym for the Association of Nigerian Authors - Obafemi Awolowo University, Ile-Ife. We are a community of book-lovers, artists, and art enthusiasts on OAU Campus.
             </div>
           </div>
 

@@ -1,6 +1,9 @@
 import React from "react";
 
 const Hero = () => {
+  const [standClicked, setStandClicked] = React.useState(false);
+  const [ticketClicked, setTicketClicked] = React.useState(false);
+
   return (
     <div className="bg-[#072422]">
       <div className="flex justify-around gap-7 items-center py-10">
@@ -30,19 +33,31 @@ const Hero = () => {
         <div className="flex justify-center gap-5 items-center mt-6">
           <a
             href="https://anaoau.org/book-festival"
-            target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-[#0B2422] text-[#89D383] px-6 py-2 border-2 border-[#000000] rounded mt-4 transition duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+            <button
+              onClick={() => setStandClicked((prev) => !prev)}
+              className={`bg-[#0B2422] text-[#89D383] px-6 py-2 border-2 border-[#000000] rounded mt-4 transition duration-300 ${
+                standClicked
+                  ? "shadow-[2px_2px_0px_0px_#000]"
+                  : "shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]"
+              }`}
+            >
               Get a Stand
             </button>
           </a>
           <a
             href="https://anaoau.org/book-festival"
-            target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-[#008300] text-white px-6 py-2 border-2 border-[#000000] rounded mt-4 transition duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+            <button
+              onClick={() => setTicketClicked((prev) => !prev)}
+              className={`bg-[#008300] text-white px-6 py-2 border-2 border-[#000000] rounded mt-4 transition duration-300 ${
+                ticketClicked
+                  ? "shadow-[2px_2px_0px_0px_#000]"
+                  : "shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]"
+              }`}
+            >
               Buy a Ticket
             </button>
           </a>
@@ -60,21 +75,21 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-around gap-7 items-center py-10">
-          <div >
-            <img
-              src="/Ticket-bottom1.svg"
-              alt="hero-bg"
-              className="w-48 h-26 object-cover"
-            />
-          </div>
-          <div>
-            <img
-              src="/Ticket-bottom2.svg"
-              alt="hero-bg"
-              className="w-48 h-26 object-cover"
-            />
-          </div>
+        <div>
+          <img
+            src="/Ticket-bottom1.svg"
+            alt="hero-bg"
+            className="w-48 h-26 object-cover"
+          />
         </div>
+        <div>
+          <img
+            src="/Ticket-bottom2.svg"
+            alt="hero-bg"
+            className="w-48 h-26 object-cover"
+          />
+        </div>
+      </div>
     </div>
   );
 };
