@@ -4,14 +4,14 @@ const Hero = () => {
   return (
     <div className="bg-[#072422]">
       <div className="flex justify-around gap-7 items-center py-10">
-        <div className='w-full h-full'>
+        <div>
           <img
             src="/Ticket-top1.svg"
             alt="hero-bg"
             className="w-48 h-26 object-cover"
           />
         </div>
-        <div className='w-full h-full'>
+        <div>
           <img
             src="/Ticket-top2.svg"
             alt="hero-bg"
@@ -60,14 +60,14 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-around gap-7 items-center py-10">
-          <div className='w-full h-full'>
+          <div >
             <img
               src="/Ticket-bottom1.svg"
               alt="hero-bg"
               className="w-48 h-26 object-cover"
             />
           </div>
-          <div className='w-full h-full'>
+          <div>
             <img
               src="/Ticket-bottom2.svg"
               alt="hero-bg"
