@@ -5,8 +5,8 @@ const Hero = () => {
   const [ticketClicked, setTicketClicked] = React.useState(false);
 
   return (
-    <div className="bg-[#072422]">
-      <div className="flex justify-around gap-7 items-center py-10">
+    <div className="bg-[#072422] mt-[-10rem] md:mt-[-8rem]">
+      <div className="flex justify-around relative top-[10rem] gap-[14.75rem] md:gap-[30rem] lg:gap-[22.75rem] items-center py-10">
         <div>
           <img
             src="/Ticket-top1.svg"
@@ -74,7 +74,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-around gap-7 items-center py-10">
+      <div className="flex justify-around relative bottom-[10rem] gap-[14.75rem] md:gap-[30rem] lg:gap-[22.75rem] items-center py-10">
         <div>
           <img
             src="/Ticket-bottom1.svg"

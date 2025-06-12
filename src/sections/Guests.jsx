@@ -24,7 +24,7 @@ const GuestSlider = () => {
   return (
     <div className="px-6 lg:px-16 py-10 w-full bg-[#F9F9FB]">
       <h2 className="text-2xl lg:text-3xl font-bold mb-2">Meet Our Guests</h2>
-      <p className="text-[#62636C] mb-6">
+      <p className="text-[#62636C] mb-6 lg:w-[26.75rem]">
         8 incredible guest artists, poets, and creators will join us to speak,
         perform, and inspire.
       </p>
